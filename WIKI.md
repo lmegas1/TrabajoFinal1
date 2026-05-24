@@ -1,4 +1,4 @@
-# 🧠 Wiki — Análisis de Salud Mental Estudiantil con Inteligencia Artificial
+# 🧠 Wiki: Análisis de Salud Mental Estudiantil con Inteligencia Artificial
 
 > **Trabajo Final** | Aplicación de IA que use librerías de software libre a través de herramientas colaborativas  
 > **Plataforma:** Jupyter Lab | **Lenguaje:** Python 3.x
@@ -106,7 +106,7 @@ El **Dataset CSV** contiene información sobre salud mental individual de 5 000 
 
 ## 3. Descripción del Dataset Usado
 
-### 3.1 Dataset CSV — `student_mental_health.csv`
+### 3.1 Dataset CSV: `student_mental_health.csv`
 
 | Atributo | Valor |
 |---|---|
@@ -136,7 +136,7 @@ El **Dataset CSV** contiene información sobre salud mental individual de 5 000 
 
 ---
 
-### 3.2 Dataset SQLite — `student_context.db`
+### 3.2 Dataset SQLite: `student_context.db`
 
 | Atributo | Valor |
 |---|---|
@@ -170,7 +170,7 @@ El **Dataset CSV** contiene información sobre salud mental individual de 5 000 
 
 ---
 
-### 3.3 Dataset Inicial — `student_mental_health_initial.csv`
+### 3.3 Dataset Inicial: `student_mental_health_initial.csv`
 
 El dataset inicial es la **unión (JOIN)** de los dos datasets anteriores usando `student_id` como clave común. Representa el punto de partida de todo el análisis.
 
@@ -183,7 +183,7 @@ El dataset inicial es la **unión (JOIN)** de los dos datasets anteriores usando
 
 ---
 
-### 3.4 Dataset Final — `student_mental_health_final.csv`
+### 3.4 Dataset Final: `student_mental_health_final.csv`
 
 El dataset final incorpora todas las variables derivadas del preprocesamiento y los modelos de IA.
 
@@ -234,7 +234,7 @@ El dataset final incorpora todas las variables derivadas del preprocesamiento y 
 Instalación de librerías con pip y configuración de Jupyter Lab. Estructura del proyecto:
 
 ```
-ai_project/
+TrabajoFinal1/
 ├── data/
 │   ├── student_mental_health.csv         # Dataset CSV (5 000 × 15)
 │   ├── student_context.db                # Base de datos SQLite (5 000 × 18)
@@ -296,35 +296,35 @@ Se exporta `student_mental_health_final.csv` con 5 000 registros y 45 columnas.
 
 ## 4.1 Descripción de las Visualizaciones Generadas
 
-### Matplotlib — `viz_01_distribucion.png`
+### Matplotlib
 **Figura 1: Distribución General (cuadrícula 2×3)**
 
 Seis subgráficos panorámicos. El histograma CGPA muestra concentración entre 3.5 y 4.0 con media 3.75. El pastel de género refleja distribución balanceada (50/50). Las barras horizontales de carreras muestran distribución uniforme entre los 10 programas. Las barras de salud mental exponen ansiedad (31.2%) superando a depresión (26.1%). El gráfico de nivel socioeconómico refleja predominancia del nivel Medio (38%). El scatter estudio-CGPA por modalidad muestra que la modalidad presencial concentra los CGPA más altos.
 
 ![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_01_distribucion.png)
 
-### Matplotlib — `viz_02_correlacion.png`
+### Matplotlib
 **Figura 2: Correlación y Box Plot (1×2)**
 
 El mapa de calor de 14 variables numéricas revela: `satisfaccion_carrera` como predictor positivo del CGPA; `academic_pressure_num` y `social_media_hours` como predictores negativos; `family_support_num` con efecto protector sobre depresión y ansiedad. El box plot confirma CGPA mediano superior en estudiantes sin problema (≈3.8 vs ≈3.6).
 
 ![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_02_correlacion.png)
 
-### Matplotlib — `viz_03_carrera_contexto.png`
+### Matplotlib
 **Figura 3: Carrera y Contexto (2×2)**
 
 CGPA con barras de error por carrera (Medicina y Enfermería lideran); tasa de problema mental por nivel socioeconómico (mayor prevalencia en niveles Bajo y Medio-bajo); scatter horas de trabajo vs CGPA (los estudiantes que trabajan más de 20h/semana tienen menor CGPA y más problemas de salud mental); satisfacción por financiamiento (Beca completa muestra mayor satisfacción).
 
 ![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_03_carrera_contexto.png)
 
-### Matplotlib — `viz_04_modelos.png`
+### Matplotlib
 **Figura 4: Modelos de IA (1×3)**
 
 Importancia de 20 variables (top 3: horas extracurriculares, tiempo desplazamiento, satisfacción carrera), y matrices de confusión de Random Forest (Blues, Acc=65.6%) y Regresión Logística (Oranges, Acc=65.1%) sobre 1 250 estudiantes del conjunto de prueba.
 
 ![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_04_modelos.png)
 
-### Matplotlib — `viz_05_clustering.png`
+### Matplotlib
 **Figura 5: Clustering K-Means (1×2)**
 
 Método del codo (k=2 a k=8) con quiebre visible en k=4, y scatter CGPA vs wellbeing_index con 4 colores (azul, verde, naranja, rosado) representando los 4 perfiles sobre 5 000 puntos. El Perfil 4 (menor bienestar, 61% problema mental) se separa claramente del Perfil 2 (mayor bienestar, 28%).
