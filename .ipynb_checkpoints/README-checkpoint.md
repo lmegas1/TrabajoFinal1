@@ -6,7 +6,7 @@
 
 > Proyecto Final Académico — Aplicación de IA con librerías de software libre.
 
-## Estructura del Repositorio
+## 📁 Estructura del Repositorio
 
 ```
 ├── data/
@@ -23,7 +23,7 @@
 └── README.md
 ```
 
-## Arquitectura del Dataset
+## 🔑 Arquitectura del Dataset
 
 Ambos datasets comparten `student_id` (STU0001–STU5000) para permitir el JOIN:
 
@@ -37,7 +37,7 @@ student_mental_health.csv   +   student_context.db
                   (5 000 × 32)
 ```
 
-## Cómo Ejecutar
+## 🚀 Cómo Ejecutar
 
 ```bash
 # 1. Clonar el repositorio
@@ -54,7 +54,7 @@ cd sql && python crear_base_datos.py && cd ..
 jupyter lab notebooks/analisis_salud_mental_IA.ipynb
 ```
 
-## Tecnologías
+## 📊 Tecnologías
 
 | Librería | Uso |
 |---|---|
@@ -65,6 +65,6 @@ jupyter lab notebooks/analisis_salud_mental_IA.ipynb
 | **Scikit-learn** | Random Forest, Reg. Logística, K-Means |
 | **SQLite** | Base de datos relacional embebida |
 
-## Wiki
+## 📖 Wiki
 
-Consultar el Wiki para el informe completo (introducción, marco teórico, descripción de datasets, pasos, visualizaciones, conclusiones y bibliografía).
+Consulta [WIKI.md](WIKI.md) para el informe completo (introducción, marco teórico, descripción de datasets, pasos, visualizaciones, conclusiones y bibliografía).
