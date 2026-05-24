@@ -1,10 +1,6 @@
 # 🧠 Análisis de Salud Mental Estudiantil con IA
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://python.org)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?logo=jupyter)](https://jupyter.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-
-> Proyecto Final Académico — Aplicación de IA con librerías de software libre.
+> Trabajo Final: Aplicación de IA con librerías de software libre.
 
 ## Estructura del Repositorio
 
@@ -35,23 +31,6 @@ student_mental_health.csv   +   student_context.db
                         │
           student_mental_health_initial.csv
                   (5 000 × 32)
-```
-
-## Cómo Ejecutar
-
-```bash
-# 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/ai-salud-mental.git
-cd ai-salud-mental
-
-# 2. Instalar dependencias
-pip install pandas numpy matplotlib seaborn bokeh pygwalker scikit-learn jupyter
-
-# 3. (Opcional) Regenerar la base de datos SQLite
-cd sql && python crear_base_datos.py && cd ..
-
-# 4. Abrir Jupyter Lab
-jupyter lab notebooks/analisis_salud_mental_IA.ipynb
 ```
 
 ## Tecnologías
