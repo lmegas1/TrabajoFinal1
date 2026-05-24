@@ -301,7 +301,7 @@ Se exporta `student_mental_health_final.csv` con 5 000 registros y 45 columnas.
 
 Seis subgráficos panorámicos. El histograma CGPA muestra concentración entre 3.5 y 4.0 con media 3.75. El pastel de género refleja distribución balanceada (50/50). Las barras horizontales de carreras muestran distribución uniforme entre los 10 programas. Las barras de salud mental exponen ansiedad (31.2%) superando a depresión (26.1%). El gráfico de nivel socioeconómico refleja predominancia del nivel Medio (38%). El scatter estudio-CGPA por modalidad muestra que la modalidad presencial concentra los CGPA más altos.
 
-![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_01_distribucion.png.png)
+![Distribución General](https://raw.githubusercontent.com/lmegas1/TrabajoFinal1/main/data/viz_01_distribucion.png)
 
 ### Matplotlib — `viz_02_correlacion.png`
 **Figura 2: Correlación y Box Plot (1×2)**
